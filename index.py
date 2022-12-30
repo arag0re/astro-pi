@@ -3,10 +3,9 @@ from gpiozero import MotionSensor
 from threading import Thread
 from time import sleep, time
 from csv import writer
+from logzero import logger
 import led_presets
 import sys
-from logzero import logger
-import _thread
 import os
 
 pir = MotionSensor(12)
@@ -60,10 +59,10 @@ def log_data():
             csv_writer.writerow(
                 [obj.temp, obj.pres, obj.hum, obj.pir, obj.gyro, obj.comp, time()])
             sleep(float(5))
+            logger.info("slept for 5 seconds.")
 
 
 def switchJoystick(direction):
-
     if direction == "left pressed":
         logger.info("left pressed")
         return
