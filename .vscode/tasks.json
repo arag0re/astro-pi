@@ -6,7 +6,8 @@
         {
             "label": "Run",
             "type": "shell",
-            "command": "python3 index.py"
+            "command": "python3 index.py",
+            "problemMatcher": []
         }
     ]
 }
