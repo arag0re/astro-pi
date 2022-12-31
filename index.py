@@ -11,8 +11,8 @@ import os
 pir = MotionSensor(12)
 sense = SenseHat()
 
-if sys.version_info[0:3] != (3, 9, 2):
-    raise Exception('Requires python 3.9.2')
+if sys.version_info[0:2] != (3, 9):
+    raise Exception('Requires python 3.9')
 
 
 class SenseData:
@@ -58,8 +58,6 @@ def log_data():
                 "successfully written line into 'sense-data.csv'.")
             csv_writer.writerow(
                 [obj.temp, obj.pres, obj.hum, obj.pir, obj.gyro, obj.comp, time()])
-            sleep(float(5))
-            logger.info("slept for 5 seconds.")
 
 
 def switchJoystick(direction):
@@ -114,6 +112,7 @@ f.deamon = True
 l.daemon = True
 f.start()
 l.start()
-
 snooziness = int(10800)
 sleep(snooziness)
+t = Thread(target=exit_program)
+t.start()
