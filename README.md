@@ -54,6 +54,11 @@ If you want to use SSH-Key instead of password you can do this with the followin
   * Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
   * Generate a new rsa-key with puttygen and save the `.ppk` and save the OpenSSH Version of the Key aswell.
   * Copy and Paste the PUB-Key from the window in putty gen in an empty txt file to save it!
+  * Connect to the AstroPi via SSH and create a Folder in you home folder called `.ssh` and then nano into `~/.ssh/authorized_keys` and paste your pubkey in there. save and exit with `ctrl+x` and then confirm with `y`.
+  * edit your ssh-config to include the Key:
+     ```
+     IdentityFile C:\Path\to\pub\key\file
+     ```
   
 ## how to run
   For this simple demo on an astro-pi-kit you wont need to install something additionally!
