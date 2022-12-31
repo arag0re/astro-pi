@@ -4,7 +4,7 @@ this is a demo written in python for the astro-pi project
 
 ## Setup AstroPi-Kit
 ### Get KitOS onto SD-Card
-  Download AstroPi-KitOS from [here](https://downloads.raspberrypi.org/AstroPi_latest) and flash it using [RaspberryPi-Imager](https://github.com/raspberrypi/rpi-      imager/releases) with no extra options enabled.
+  Download AstroPi-KitOS from [here](https://downloads.raspberrypi.org/AstroPi_latest) and flash it using [RaspberryPi-Imager](https://github.com/raspberrypi/rpi-imager/releases) with no extra options enabled.
 
 ### Setup Hardware
   Then follow the [guide](https://projects.raspberrypi.org/en/projects/code-for-your-astro-pi-mission-space-lab-experiment/1) on how to assemble the Kit.
