@@ -26,7 +26,7 @@ this is a demo written in python for the astro-pi project
       ```
       vncpasswd -service //to change the default password!
       ```
-    * then:
+   * then:
       ```
       sudo raspi-config nonint do_vnc 0
       sudo systemctl enable novnc
