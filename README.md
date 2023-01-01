@@ -3,7 +3,7 @@
 this is a demo written in python for the astro-pi project
 
 ## Setup AstroPi-Kit
-  See [Wiki](https://github.com/arag0re/astro-pi/wik)!
+  See [Wiki](https://github.com/arag0re/astro-pi/wiki)!
 
 ## how to run
   For this simple demo on an astro-pi-kit you wont need to install something additionally!
